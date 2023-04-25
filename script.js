@@ -14,18 +14,18 @@ function getAPI () {
         })
 }
 
-buttonOne.addEventListener('click', getAPI)
-
 function addActivity (activity) {
     console.log(activity.activity, 'hello')
     let activityDiv = document.createElement('div')
+        activityDiv.style.border = '2px solid black'
+        activityDiv.style.margin = '10px'
     let activitySaveButton = document.createElement('button')
     let activityPara = document.createElement('p')
     activityDiv.append(activityPara, activitySaveButton)
     activityPara.textContent = activity.activity
     activitySaveButton.textContent = 'Save Activity'
-    activitySaveButton.style.background = 'black';
-    activitySaveButton.style.color = 'white';
+        activitySaveButton.style.background = 'black';
+        activitySaveButton.style.color = 'white';
     activitySaveButton.addEventListener('click', function () {
         console.log('button work')
         savedSongs.textContent = activity.activity
@@ -37,3 +37,4 @@ function addActivity (activity) {
     randomSearchDiv.appendChild(activityDiv)
 }
 
+buttonOne.addEventListener('click', getAPI)
