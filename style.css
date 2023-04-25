@@ -1,0 +1,29 @@
+* {
+    background-color: rgb(216, 188, 242);
+}
+
+#buttonOne {
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+#songInput {
+    border-radius: 3px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration:overline underline dotted;
+    padding:10px 10px;
+    margin: 10px;
+}
+
+#firstForm {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
