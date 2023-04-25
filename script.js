@@ -3,7 +3,7 @@ let firstForm = document.getElementById('firstForm')
 let songInput = document.getElementById('songInput')
 let buttonOne = document.getElementById('buttonOne')
 
-let url = `https://musicbrainz.org/ws/2`
+let url = `https://musicbrainz.org/ws/2/`
 
 // function getAPI () {
 //     fetch(url)
