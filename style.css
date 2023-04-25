@@ -13,7 +13,6 @@
 }
 
 h1 {
-    text-align: center;
     text-decoration:overline underline dotted;
     padding:10px 10px;
     margin: 10px;
@@ -24,7 +23,6 @@ h1 {
 }
 
 h2 {
-    text-align: center;
     text-decoration: underline;
 }
 
