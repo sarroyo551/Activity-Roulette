@@ -3,31 +3,30 @@ let firstForm = document.getElementById('firstForm')
 let songInput = document.getElementById('songInput')
 let buttonOne = document.getElementById('buttonOne')
 
-let url = `https://musicbrainz.org/ws/2/`
+let url = 'https://www.boredapi.com/api/activity'
 
-// function getAPI () {
-//     fetch(url)
-//         .then(function (r) {
-//             return r.json();
-//         })
-//         .then(function (data) {
-//             console.log(data, 'hello')
-//         })
-// }
+function getAPI () {
+    fetch(url)
+        .then(function (r) {
+            return r.json();
+        })
+        .then(function (data) {
+            console.log(data, 'hello')
+        })
+}
 
-// function preventDef (e) {
-//     e.preventDefault();
-//     console.log('fire');
-//     getAPI();
-// }
-// buttonOne.addEventListener('click', preventDef)
+buttonOne.addEventListener('click', getAPI)
 
 // getAPI()
 
-fetch (url,  { mode: 'no-cors'})
-    .then(function (r) {
-    return r.json();
-    })
-    .then(function (data) {
-    console.log(data, 'hello')
-    })
+// fetch(url,  { mode: 'cors', headers: {
+//     'Content-Type': 'application/json'
+// }})
+//     .then(function (r) {
+//     return r.json();
+//     })
+//     .then(function (data) {
+//     console.log(data, 'hello')
+//     }).catch( function (error) {
+//         console.log(error)
+//     })
