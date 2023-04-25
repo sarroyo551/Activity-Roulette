@@ -14,8 +14,6 @@
 
 h1 {
     text-decoration:overline underline dotted;
-    padding:10px 10px;
-    margin: 10px;
 }
 
 #firstForm {
@@ -28,4 +26,8 @@ h2 {
 
 /* #savedSongs {
     background-color: blueviolet;
+} */
+
+/* .hidden {
+    display: none;
 } */

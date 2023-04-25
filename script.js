@@ -1,6 +1,4 @@
 let savedSongs = document.getElementById('savedSongs')
-let firstForm = document.getElementById('firstForm')
-let songInput = document.getElementById('songInput')
 let buttonOne = document.getElementById('buttonOne')
 let randomSearchDiv = document.getElementById('randomSearchDiv')
 
@@ -26,17 +24,16 @@ function addActivity (activity) {
     activityDiv.append(activityPara, activitySaveButton)
     activityPara.textContent = activity.activity
     activitySaveButton.textContent = 'Save Activity'
+    activitySaveButton.style.background = 'black';
+    activitySaveButton.style.color = 'white';
+    activitySaveButton.addEventListener('click', function () {
+        console.log('button work')
+        savedSongs.textContent = activity.activity
+        //only saves one activity
+        savedSongs.style.backgroundColor = 'purple';
+        savedSongs.style.color = 'white'
+        savedSongs.style.borderRadius = '5px';
+    })
     randomSearchDiv.appendChild(activityDiv)
 }
 
-// fetch(url,  { mode: 'cors', headers: {
-//     'Content-Type': 'application/json'
-// }})
-//     .then(function (r) {
-//     return r.json();
-//     })
-//     .then(function (data) {
-//     console.log(data, 'hello')
-//     }).catch( function (error) {
-//         console.log(error)
-//     })
