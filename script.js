@@ -18,28 +18,21 @@ function getAPI () {
 function addActivity (activity) {
     console.log(activity.activity, 'hello')
     let activityDiv = document.createElement('div')
-        // activityDiv.style.border = '2px solid black'
-        // activityDiv.style.margin = '10px'
     let activitySaveButton = document.createElement('button')
     let activityPara = document.createElement('p')
     activityDiv.append(activityPara, activitySaveButton)
     activityPara.textContent = activity.activity
     activitySaveButton.textContent = 'Save Activity'
-        // activitySaveButton.style.background = 'black';
-        // activitySaveButton.style.color = 'white';
     activitySaveButton.addEventListener('click', function () {
         console.log('button work')
         savedSongs.textContent = activity.activity
-        //only saves one activity
-
-        //does not save to storage 
-        // savedSongs.style.backgroundColor = 'purple';
-        // savedSongs.style.color = 'white'
-        // savedSongs.style.borderRadius = '5px';
+        //only saves one activity!!!!!!!!!!!!
     })
     randomSearchDiv.innerHTML = ''
     randomSearchDiv.appendChild(activityDiv)
 }
+
+buttonOne.addEventListener('click', getAPI)
 
 // function init() {
 //     let favTemp = localStorage.getItem('favorites')
@@ -52,4 +45,3 @@ function addActivity (activity) {
 // }
 
 
-buttonOne.addEventListener('click', getAPI)
