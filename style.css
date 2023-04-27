@@ -1,5 +1,11 @@
-/* * {
+* {
+    padding:0px;
+    margin:0px;
     background-color: rgb(216, 188, 242);
+}
+
+.top-banner {
+    text-align: center;
 }
 
 #buttonOne {
@@ -24,10 +30,10 @@ h2 {
     text-decoration: underline;
 } */
 
-/* #savedSongs {
+#savedSongs {
     background-color: blueviolet;
-} */
+} 
 
-/* .hidden {
+.hidden {
     display: none;
-} */
+} 
