@@ -13,3 +13,4 @@ WHEN I click on add to favorites, the song and its info will be saved at the bot
 GIVEN a second input field 
 WHEN i search an artists name
 THEN i am presented with the artists name as well as when/where they are playing next -->
+https://sarroyo551.github.io/group-5-music-project/
