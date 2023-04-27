@@ -1,7 +1,8 @@
 let savedSongs = document.getElementById('savedSongs')
 let buttonOne = document.getElementById('buttonOne')
 let randomSearchDiv = document.getElementById('randomSearchDiv')
-let favorites = [];
+let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+//either there will be things saved to local storage other wise default to emptyarray
 
 let url = 'https://www.boredapi.com/api/activity'
 
@@ -26,12 +27,37 @@ function addActivity (activity) {
     activitySaveButton.addEventListener('click', function () {
         console.log('button work')
         savedSongs.textContent = activity.activity
+        favorites.push(activity.activity)
+        localStorage.setItem('favorites', JSON.stringify(favorites))
+        console.log(favorites)
+        renderFavs()
         //only saves one activity!!!!!!!!!!!!
     })
     randomSearchDiv.innerHTML = ''
     randomSearchDiv.appendChild(activityDiv)
 }
 
+console.log(favorites)
+
+function renderFavs () {
+    savedSongs.textContent = '';
+    for (let i = 0; i < favorites.length; i++) {
+        let p = document.createElement('p');
+        p.textContent = favorites[i]
+        savedSongs.appendChild(p)
+        let xButton = document.createElement('button')
+        xButton.textContent = 'x'
+        p.appendChild(xButton)
+        xButton.addEventListener('click', function () {
+            console.log(i)
+            favorites.splice(i, 1)
+            console.log(favorites)
+            localStorage.setItem('favorites', JSON.stringify(favorites))
+            renderFavs()
+        })
+    }
+}
+renderFavs()
 buttonOne.addEventListener('click', getAPI)
 
 // function init() {
