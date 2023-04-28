@@ -3,7 +3,7 @@ let buttonOne = document.getElementById('buttonOne')
 let randomSearchDiv = document.getElementById('randomSearchDiv')
 let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 //either there will be things saved to local storage other wise default to emptyarray
-
+let divJokes = document.getElementById("get-jokes")
 let url = 'https://www.boredapi.com/api/activity'
 
 function getAPI () {
@@ -60,14 +60,32 @@ function renderFavs () {
 renderFavs()
 buttonOne.addEventListener('click', getAPI)
 
-// function init() {
-//     let favTemp = localStorage.getItem('favorites')
-//     if (favTemp) { //if exists
-//         favorites.JSON.parse(favTemp)
-//     }
-//     favorites.push()//not it
-//     localStorage.setItem('favorites', JSON.stringify(favorites))
-//     addActivity(activity)
-// }
+var jokesURL = "https://official-joke-api.appspot.com/random_joke"
 
+function getJokes(){
+    fetch(jokesURL)
+    .then(function(response){
+        return response.json()
+
+    })
+    .then(function(data){
+        console.log(data)
+        addJoke(data)
+    }) 
+
+}
+getJokes();
+
+function addJoke(joke){
+console.log(joke.punchline)
+// let jokeDiv = document.createElement("div")
+let setupP = document.createElement("p")
+let punchlineP = document.createElement("p")
+setupP.textContent = joke.setup
+punchlineP.textContent = joke.punchline
+// divJokes.append(jokeDiv)
+divJokes.appendChild(setupP)
+divJokes.appendChild(punchlineP)
+}
+jokeBtn.addEventListener("click", addJoke)
 
