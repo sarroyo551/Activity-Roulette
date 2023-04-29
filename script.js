@@ -3,20 +3,25 @@ let buttonOne = document.getElementById('buttonOne')
 let randomSearchDiv = document.getElementById('randomSearchDiv')
 let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 //either there will be things saved to local storage other wise default to emptyarray
-let divJokes = document.getElementById("get-jokes")
+let divJokes = document.getElementById("best-jokes")
+let jokeBtn = document.getElementById("jokeBtn")
 let url = 'https://www.boredapi.com/api/activity'
 
-function getAPI () {
+
+// First API call for the activities
+
+function getAPI() {
     fetch(url)
         .then(function (r) {
             return r.json();
         })
         .then(function (data) {
-        addActivity(data)    
+            addActivity(data)
         })
 }
 
-function addActivity (activity) {
+
+function addActivity(activity) {
     console.log(activity.activity, 'hello')
     let activityDiv = document.createElement('div')
     let activitySaveButton = document.createElement('button')
@@ -31,7 +36,7 @@ function addActivity (activity) {
         localStorage.setItem('favorites', JSON.stringify(favorites))
         console.log(favorites)
         renderFavs()
-        //only saves one activity!!!!!!!!!!!!
+
     })
     randomSearchDiv.innerHTML = ''
     randomSearchDiv.appendChild(activityDiv)
@@ -39,7 +44,7 @@ function addActivity (activity) {
 
 console.log(favorites)
 
-function renderFavs () {
+function renderFavs() {
     savedSongs.textContent = '';
     for (let i = 0; i < favorites.length; i++) {
         let p = document.createElement('p');
@@ -60,32 +65,31 @@ function renderFavs () {
 renderFavs()
 buttonOne.addEventListener('click', getAPI)
 
+// Second API call for the Jokes
+
 var jokesURL = "https://official-joke-api.appspot.com/random_joke"
 
-function getJokes(){
+function getJokes() {
     fetch(jokesURL)
-    .then(function(response){
-        return response.json()
+        .then(function (response) {
+            return response.json()
 
-    })
-    .then(function(data){
-        console.log(data)
-        addJoke(data)
-    }) 
+        })
+        .then(function (data) {
+            console.log(data)
+            addJoke(data)
+        })
 
 }
-getJokes();
 
-function addJoke(joke){
-console.log(joke.punchline)
-// let jokeDiv = document.createElement("div")
-let setupP = document.createElement("p")
-let punchlineP = document.createElement("p")
-setupP.textContent = joke.setup
-punchlineP.textContent = joke.punchline
-// divJokes.append(jokeDiv)
-divJokes.appendChild(setupP)
-divJokes.appendChild(punchlineP)
+function addJoke(joke) {
+    divJokes.innerHTML = ''
+    let setupP = document.createElement("p")
+    let punchlineP = document.createElement("p")
+    setupP.textContent = joke.setup
+    punchlineP.textContent = joke.punchline
+    divJokes.appendChild(setupP)
+    divJokes.appendChild(punchlineP)
 }
-jokeBtn.addEventListener("click", addJoke)
+jokeBtn.addEventListener("click", getJokes)
 
