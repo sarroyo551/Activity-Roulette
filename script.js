@@ -72,8 +72,8 @@ function getJokes(){
         console.log(data)
         addJoke(data)
     }) 
-
 }
+
 getJokes();
 
 function addJoke(joke){
