@@ -1,12 +1,22 @@
 * {
     padding:0px;
     margin:0px;
-    background-color: rgb(216, 188, 242);
 }
 
 .top-banner {
     text-align: center;
+    padding:15px;
 }
+
+.search-button {
+    padding-right:25%;
+}
+
+.results-container {
+    font-size:75px ;
+}
+
+
 
 #buttonOne {
     border-radius: 10px;
@@ -18,9 +28,6 @@
     border-radius: 3px;
 }
 
-h1 {
-    text-decoration:overline underline dotted;
-}
 
 #firstForm {
     text-align: center;
