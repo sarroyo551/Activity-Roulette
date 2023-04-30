@@ -8,12 +8,24 @@
     padding:15px;
 }
 
+.history {
+    font-size: 20px;
+    text-align: left;
+}
+
+.history {
+    margin-left:100px;
+    
+}
+
 .search-button {
     padding-right:25%;
 }
 
 .results-container {
-    font-size:75px ;
+    font-size:40px ;
+    width:80%;
+    align-items: center;
 }
 
 
