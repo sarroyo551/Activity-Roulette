@@ -38,6 +38,7 @@ function addActivity(activity) {
         renderFavs()
 
     })
+    activitySaveButton.id = 'saveBtn'
     randomSearchDiv.innerHTML = ''
     randomSearchDiv.appendChild(activityDiv)
 }
@@ -59,8 +60,12 @@ function renderFavs() {
             console.log(favorites)
             localStorage.setItem('favorites', JSON.stringify(favorites))
             renderFavs()
+
+        
         })
+        xButton.id = 'jsButton';
     }
+    
 }
 renderFavs()
 buttonOne.addEventListener('click', getAPI)

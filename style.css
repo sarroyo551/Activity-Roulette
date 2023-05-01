@@ -11,12 +11,24 @@
 .history {
     font-size: 20px;
     text-align: left;
+    border-radius: 10px;
 }
 
-.history {
-    margin-left:100px;
-    
+#jsButton {
+    border-radius: 10px;
+    width: 20px;
+    background-color: darkred;
+    color:white;
+    margin: 6px;
 }
+
+#saveBtn {
+    background-color: lightgreen;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
 
 .search-button {
     padding-right:25%;
@@ -26,6 +38,10 @@
     font-size:40px ;
     width:80%;
     align-items: center;
+}
+
+.search-results {
+    border-radius: 10px;
 }
 
 .jokes {
@@ -50,6 +66,7 @@
 
 #best-jokes {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
 }
 
 #songInput {
@@ -62,7 +79,7 @@
 }
 
 #savedSongs {
-
+    color:white;
 } 
 
 .hidden {
