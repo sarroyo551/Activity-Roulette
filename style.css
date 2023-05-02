@@ -26,12 +26,14 @@
     background-color: lightgreen;
     border-radius: 10px;
     font-size: 20px;
-    padding: 10px;
+    padding: 20px;
+    margin: 15px;
 }
 
 
 .search-button {
     padding-right:25%;
+    
 }
 
 .results-container {
@@ -50,6 +52,7 @@
 
 .jokes-btn {
     margin-left: 50px;
+    border-radius: 10px;
 }
 
 

@@ -38,7 +38,8 @@ function addActivity(activity) {
         renderFavs()
 
     })
-    activitySaveButton.id = 'saveBtn'
+    activitySaveButton.id = 'saveBtn';
+    activitySaveButton.className = 'large green waves-effect waves-light btn-small';
     randomSearchDiv.innerHTML = ''
     randomSearchDiv.appendChild(activityDiv)
 }
@@ -64,6 +65,7 @@ function renderFavs() {
         
         })
         xButton.id = 'jsButton';
+        xButton.className = 'large pulse red waves-effect waves-light btn-small';
     }
     
 }
