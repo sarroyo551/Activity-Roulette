@@ -48,6 +48,8 @@ function addActivity(activity) {
         renderFavs()
         //called renderFavs function 
     })
+    activitySaveButton.id = 'saveBtn';
+    activitySaveButton.className = 'green waves-effect waves-light btn-large';
     randomSearchDiv.innerHTML = ''
     //clears out div
     randomSearchDiv.appendChild(activityDiv)
@@ -80,7 +82,10 @@ function renderFavs() {
             renderFavs()
             //called renderFavs inside renderFavs
         })
+        xButton.id = 'jsButton';
+        xButton.className = 'large material-icons large pulse red waves-effect waves-light btn-small';
     }
+    
 }
 renderFavs()
 buttonOne.addEventListener('click', getAPI)
