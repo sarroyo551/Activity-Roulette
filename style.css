@@ -21,6 +21,9 @@
     color:white;
     margin: 6px;
 }
+ .joke-header {
+    border-radius: 10px;
+ }
 
 #saveBtn {
     background-color: lightgreen;
@@ -72,6 +75,7 @@
     font-size: 30px;
     text-align: left;
     padding-top: 35px;
+    text-align: center;
 }
 
 #songInput {
