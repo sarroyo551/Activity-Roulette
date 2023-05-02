@@ -61,8 +61,6 @@ function renderFavs() {
             console.log(favorites)
             localStorage.setItem('favorites', JSON.stringify(favorites))
             renderFavs()
-
-        
         })
         xButton.id = 'jsButton';
         xButton.className = 'large material-icons large pulse red waves-effect waves-light btn-small';
