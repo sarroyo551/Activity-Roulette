@@ -36,3 +36,4 @@ Materilize Framework
 ## URL
 This site is deployed [here](https://sarroyo551.github.io/group-5-music-project/)
 
+![Activity Roulette website.](./assets/images/Untitled_%20May%202%2C%202023%206_56%20PM.gif)
