@@ -39,7 +39,7 @@ function addActivity(activity) {
 
     })
     activitySaveButton.id = 'saveBtn';
-    activitySaveButton.className = 'large green waves-effect waves-light btn-small';
+    activitySaveButton.className = 'green waves-effect waves-light btn-large';
     randomSearchDiv.innerHTML = ''
     randomSearchDiv.appendChild(activityDiv)
 }
@@ -65,7 +65,7 @@ function renderFavs() {
         
         })
         xButton.id = 'jsButton';
-        xButton.className = 'large pulse red waves-effect waves-light btn-small';
+        xButton.className = 'large material-icons large pulse red waves-effect waves-light btn-small';
     }
     
 }
