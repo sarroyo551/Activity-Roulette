@@ -1,72 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Compiled and minified CSS -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Activity Roulette</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
 
-<div class="col s8 m4">
-    <div class="card center-align">
-        <header class="top-banner">
-            <h1>Activity Roulette</h1>
-        </header>
-    </div> 
-</div>
-
-<div class="row main-container">
-        <div class="row saved-search"></div>
-            <div class="history card col s3 blue lighten-3">
-                <h2 class="history">Search History</h2>
-                <div id="savedSongs"></div>
+    <div class="col s8 m4">
+        <div class="card center-align">
+            <header class="top-banner">
+                <h1>Bored?</h1>
+            </header>
         </div>
-        <div class="results-container">
-            <div class="col s8">
-                <div class="search-results blue lighten-3 center-align">
-                    <div id="randomSearchDiv"></div>
-                    <div class="search-button right-align">
-                    <button id="buttonOne" class="large cyan waves-effect waves-light btn-small">Search An Activity! <i class="material-icons">rowing</i></button>
-                </div>
-                        
-                </div> 
-            </div>
-        </div>
-</div>
-        <!--<div class="search-container">
-            <div class="col s4">
-                <div class="search-button right-align">
-                    <button id="buttonOne" class="large cyan waves-effect waves-light btn-small">Search An Activity! <i class="material-icons">rowing</i></button>
-                </div>
-            </div>        
-        </div>
-</div>   !--> 
-    
-    <div class="row jokes">
-        <div class="joke-header center-align col s8 offset-s2 blue lighten-3">
-            <!-- <h3>Random Jokes: </h3> !-->
-            <div class="joke-btn">
-            <button id="jokeBtn" class="large cyan waves-effect waves-light btn-small">have a laugh: <i class="material-icons">sentiment_very_satisfied</i></button>
-            <div class="joke-display">
-            <div id="best-jokes" class="center-align"></div>
-        </div>
-            </div>
-        </div>
-       <!-- <div class="joke-display col s4">
-            <div id="best-jokes"></div>
-        </div> 
-        !-->
-        
     </div>
-<script src="./script.js"></script>
+
+    <div class="row main-container">
+        <div class="results-container">
+            <div class="search-results blue lighten-3 center-align">
+                <div id="randomSearchDiv"></div>
+                <div class="search-button center-align">
+                    <button id="buttonOne" class="large cyan waves-effect waves-light btn-small">Search An Activity! <i
+                            class="material-icons">rowing</i></button>
+                </div>
+                <div class="joke-btn">
+                    <button id="jokeBtn" class="large orange waves-effect waves-light btn-small">have a laugh: <i
+                            class="material-icons">sentiment_very_satisfied</i></button>
+                    <div class="joke-display">
+                        <div id="best-jokes" class="center-align"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row saved-search"></div>
+    <div class="history blue lighten-3">
+        <h2 class="history">Search History</h2>
+        <br>
+        <div id="savedSongs"></div>
+    </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>
