@@ -34,6 +34,6 @@ Materilize Framework
 <li>Add more APIs to display additional types of content.</li> 
 
 ## URL
-This site is deployed [here](https://sarroyo551.github.io/group-5-music-project/)
+This site is deployed [here](https://sarroyo551.github.io/Activity-Roulette/)
 
 ![Activity Roulette website.](./assets/images/Untitled_%20May%202%2C%202023%206_56%20PM.gif)
