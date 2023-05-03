@@ -112,8 +112,8 @@ function addJoke(joke) {
     divJokes.innerHTML = ''
     let setupP = document.createElement("p")
     let punchlineP = document.createElement("p")
-    setupP.textContent = joke.setup
-    punchlineP.textContent = joke.punchline
+    setupP.textContent = "Setup: " + joke.setup
+    punchlineP.textContent = "Punchline: " + joke.punchline
     divJokes.appendChild(setupP)
     divJokes.appendChild(punchlineP)
 }
