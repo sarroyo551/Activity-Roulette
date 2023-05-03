@@ -36,4 +36,4 @@ Materilize Framework
 ## URL
 This site is deployed [here](https://sarroyo551.github.io/Activity-Roulette/)
 
-![Activity Roulette website.](./assets/images/Untitled_%20May%202%2C%202023%206_56%20PM.gif)
+![Activity Roulette website.](./assets/images/Untitled_%20May%202%2C%202023%208_35%20PM.gif)
