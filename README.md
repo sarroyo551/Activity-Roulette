@@ -1,11 +1,11 @@
 # ACTIVITY ROULETTE 
 
 ## Table of Contents
-<li>Description</li> 
-<li>User Story</li>
-<li>Technologies Used</li> 
-<li>APIs Used</li>   
-<li>Future Directions</li> 
+Description
+User Story
+Technologies Used
+APIs Used  
+Future Directions
 
 ## Description
 We created a web application called Activity Roulette that allows users to display a random activity or joke by clicking on the "Search An Activity" or "Have A Laugh" button respectively. Users can save an activity by clicking on the "Save Activity" button next to it. They can also delete a saved activity by clicking on the "Delete (red X)" button under "Search History."
@@ -28,10 +28,10 @@ JavaScript
 Materilize Framework 
 
 ## Future Directions
-<li>Improve the UI and make it more responsive.</li>  
-<li>Allow users to share their saved activities and jokes on social media.</li> 
-<li>Allow users to filter saved activities and jokes by category or tag.</li>  
-<li>Add more APIs to display additional types of content.</li> 
+Improve the UI and make it more responsive.
+Allow users to share their saved activities and jokes on social media.
+Allow users to filter saved activities and jokes by category or tag. 
+Add more APIs to display additional types of content.
 
 ## URL
 This site is deployed [here](https://sarroyo551.github.io/Activity-Roulette/)
